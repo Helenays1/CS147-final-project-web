@@ -16,12 +16,23 @@
 
 <body>
     <h1 class="flexHeader">
-        <span>
-            <span id="deviceCount">0 devices</span>
-            <select id="listOfDevices" class="select_box"></select>
-        </span>
-        <span>Temperature & Humidity Real-time Data</span>
+        <span>Motion Change Real-Time Data and Alert</span>
     </h1>
+    <div>
+        <table>
+            <tr>
+                <td>Detected Count</td>
+                <td id="detectedCount"></td>
+            </tr>
+            <tr>
+                <td>Alert Count</td>
+                <td id="alertCount"></td>
+            </tr>
+            <tr>
+                <td>Alert Rate</td>
+                <td id="alertRate"></td>
+        </table>
+    </div>
     <div>
         <canvas id="iotChart"></canvas>
     </div>
